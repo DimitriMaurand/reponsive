@@ -79,6 +79,117 @@ le reste du contenu du titre en blanc */
   padding: 5px 0;
 }
 .imgTitle:hover {
-  background-color: rgba(0, 0, 0, 1);
   cursor: pointer;
+  animation: changeColor ease-in-out 4s infinite;
 }
+
+.ballContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+}
+.ball {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: blue;
+  border: 1px solid white;
+  position: absolute;
+  animation: roundedBall ease-in-out 6s infinite;
+}
+
+/* @keyframes changeColor {
+  from {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  to {
+    background: rgb(230, 100, 101);
+    background: linear-gradient(90deg, rgba(230, 100, 101, 1) 0%, #9198e5 100%);
+  }
+} */
+
+@keyframes changeColor {
+  0% {
+    background: rgb(189, 34, 195);
+    background: linear-gradient(
+      90deg,
+      rgba(189, 34, 195, 1) 1%,
+      rgba(233, 6, 6, 0.13527851458885942) 100%
+    );
+  }
+
+  25% {
+    background: rgb(189, 34, 195);
+    background: linear-gradient(
+      90deg,
+      rgba(189, 34, 195, 1) 1%,
+      rgba(233, 6, 6, 0.4854111405835544) 100%
+    );
+  }
+
+  50% {
+    background: rgb(216, 153, 217);
+    background: linear-gradient(
+      90deg,
+      rgba(216, 153, 217, 1) 0%,
+      rgba(189, 34, 195, 1) 1%,
+      rgba(192, 32, 184, 1) 7%,
+      rgba(233, 6, 6, 0.1061007957559682) 100%
+    );
+  }
+}
+
+/* @keyframes changeColor {
+  0% {
+    background: rgb(145, 152, 229);
+    background: linear-gradient(
+      90deg,
+      rgba(145, 152, 229, 1) 0%,
+      rgba(230, 100, 101, 1) 100%
+    );
+  }
+  25% {
+    background: rgb(230, 100, 101);
+    background: linear-gradient(
+      90deg,
+      rgba(230, 100, 101, 1) 0%,
+      rgba(145, 152, 229, 1) 32%,
+      rgba(230, 100, 101, 1) 100%
+    );
+  }
+  50% {
+    background: rgb(230, 100, 101);
+    background: linear-gradient(
+      90deg,
+      rgba(230, 100, 101, 1) 0%,
+      rgba(145, 152, 229, 1) 54%,
+      rgba(230, 100, 101, 1) 100%
+    );
+  }
+  75% {
+    background: rgb(230, 100, 101);
+    background: linear-gradient(
+      90deg,
+      rgba(230, 100, 101, 1) 0%,
+      rgba(145, 152, 229, 1) 75%,
+      rgba(230, 100, 101, 1) 100%
+    );
+  }
+
+  100% {
+    background: rgb(230, 100, 101);
+    background: linear-gradient(90deg, rgba(230, 100, 101, 1) 0%, #9198e5 100%);
+    color: rgba(255, 255, 255, 1);
+  }
+} */
+
+/*git init 
+git add .
+git commit -m "message"
+git remote add origin  TONURL
+git branch -m main 
+git push origin main*/
